@@ -25,12 +25,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class ReceiverDemo extends Activity {
-    TextView txtMsg;
-    Button btnStopService;
-    ComponentName service;
-    Intent intentMyService;
-    BroadcastReceiver receiver;
-    String tag = "Dynamic Receiver";
+  	private  TextView txtMsg;
+    private Button btnStopService;
+    private ComponentName service;
+    private Intent intentMyService;
+    private BroadcastReceiver receiver;
+    private String tag = "Dynamic Receiver";
     
     @Override
     public void onCreate(Bundle savedInstanceState) {

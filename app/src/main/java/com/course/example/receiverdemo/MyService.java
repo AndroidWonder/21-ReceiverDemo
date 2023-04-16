@@ -6,8 +6,8 @@ import android.os.IBinder;
 import android.util.Log;
 
 public class MyService extends Service {
-	boolean isRunning = true;
-	String tag = "Dynamic Receiver";
+	private boolean isRunning = true;
+	private String tag = "Dynamic Receiver";
 
 	@Override
 	public IBinder onBind(Intent arg0) {
