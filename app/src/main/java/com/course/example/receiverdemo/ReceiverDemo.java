@@ -22,9 +22,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class ReceiverDemo extends Activity {
-    EditText txtMsg;
+    TextView txtMsg;
     Button btnStopService;
     ComponentName service;
     Intent intentMyService;
@@ -36,7 +37,7 @@ public class ReceiverDemo extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
-        txtMsg = (EditText) findViewById(R.id.txtMsg);                
+        txtMsg = (TextView) findViewById(R.id.txtMsg);
         
         //start service
         intentMyService = new Intent(this, MyService.class);        

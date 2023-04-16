@@ -3,24 +3,33 @@
     android:id="@+id/myScrollView1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ff009999" >
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/widget32"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:background="#ff009999">
 
-    <EditText
-        android:id="@+id/txtMsg"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/widget32"
         android:layout_width="fill_parent"
-        android:layout_height="600px"
-        android:textSize="16sp"/>
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnStopService"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stop Service" />
-</LinearLayout>
-    </ScrollView>
+        <Button
+            android:id="@+id/btnStopService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="#ff0000ff"
+            android:text="Stop Service" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/txtMsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff0000"
+                android:textSize="16sp" />
+        </ScrollView>
+
+    </LinearLayout>
+</ScrollView>
